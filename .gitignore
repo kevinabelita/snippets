@@ -1,0 +1,9 @@
+web/fuel/app/logs/*/*/*
+web/fuel/app/cache/*/*
+.idea/*
+migrations.php
+*.pathcache
+.settings
+**/.idea/*
+/desktop.ini
+
