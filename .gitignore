@@ -1,5 +1,5 @@
-web/fuel/app/logs/*/*/*
-web/fuel/app/cache/*/*
+fuel/app/logs/*/*/*
+fuel/app/cache/*/*
 .idea/*
 migrations.php
 *.pathcache
@@ -7,3 +7,4 @@ migrations.php
 **/.idea/*
 /desktop.ini
 
+logs
