@@ -1,4 +1,6 @@
 snippets
 ========
 
-Collection of PHP snippets
+Collection of simple PHP snippets
+
+Framework Used: FuelPHP
