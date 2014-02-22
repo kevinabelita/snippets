@@ -9,6 +9,11 @@ class Controller_Main extends Controller_Template
 	
 	public function action_index()
 	{
-		echo 'NO CONTENT'; die;
+		echo '<a href="' . Uri::create('maze/index') . '">Maze</a>';
+		echo '<br/>';
+		echo '<a href="' . Uri::create('calc/index') . '">Calculator</a>';
+		echo '<br/>';
+		echo '<a href="' . Uri::create('captcha/index') . '">Captcha Test</a>';
+		die;
 	}
 }

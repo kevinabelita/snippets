@@ -8,7 +8,7 @@ class Controller_Captcha extends Controller_Main
 	public function before()
 	{
 		parent::before();
-		$this->font = $_SERVER['DOCUMENT_ROOT'] . '/assets/fonts/PlAGuEdEaTH.ttf';
+		$this->font = DOCROOT . 'assets/fonts/PlAGuEdEaTH.ttf';
 	}
 	
 	public function action_index()
