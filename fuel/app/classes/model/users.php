@@ -7,10 +7,11 @@ class Model_Users extends \Orm\Model
 		'id',
 		'username',
 		'password',
-		'fname',
-		'lname',
-		'bdate',
+		'email',
+		'dob',
 		'gender',
+		'created_at',
+		'updated_at',
 	);
 
 	protected static $_observers = array(
@@ -33,12 +34,12 @@ class Model_Users extends \Orm\Model
 			->from('users')
 			->and_where_open()
 				->where('users.username', '=', $username)
-				->or_where('users.password', '=', $password)
+				->where('users.password', '=', $password)
 			->and_where_close()
 		->execute()->as_array();
 		
-		$exists = (count($data) > 0) ? true : false;
-		
+		$exists = (bool) $data[0]['ids'];
+
 		return $exists;
 	}
 }
