@@ -1,7 +1,7 @@
 
-<a href="' . Uri::create('maze/index') . '">Maze</a><br/>
-<a href="' . Uri::create('calc/index') . '">Calculator</a><br/>
-<a href="' . Uri::create('captcha/index') . '">Captcha Test</a>
+<a href="<?php echo Uri::create('maze/index'); ?>">Maze</a><br/>
+<a href="<?php echo Uri::create('calc/index'); ?>">Calculator</a><br/>
+<a href="<?php echo Uri::create('captcha/index'); ?>">Captcha Test</a>
 <hr/>
 
 <form method="POST" action="<?php echo Uri::create('main/check'); ?>" id="" class="">
