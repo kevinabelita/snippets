@@ -44,8 +44,7 @@ class Controller_Captcha extends Controller_Main
 
 	public function action_process_form()
 	{
-		if(Input::post())
-		{
+		if(Input::post()) {
 			$name = Input::post('name');
 			$uc = Input::post('uc');
 			$code = Session::get('cs', false);
@@ -60,8 +59,7 @@ class Controller_Captcha extends Controller_Main
 			echo '<br/><a href="' . Uri::create('captcha/index') . '">Back</a>';
 			die;
 		}
-		else
-		{
+		else {
 			Response::redirect('captcha/index');
 		}
 	}
